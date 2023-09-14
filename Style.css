@@ -70,3 +70,34 @@
     font-size: 200px;
 
 }
+
+.IntroToCss {
+
+    color:brown;
+    background-color:darksalmon;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+body{
+
+    background-color:blanchedalmond;
+
+}
+
+#first {
+
+    color:purple;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+@media screen and (min-width: 700px){
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
