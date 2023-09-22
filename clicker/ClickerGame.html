@@ -7,10 +7,23 @@
     <body>
         <div>
             <button onclick="ClickCounter(1)">Click Me</button>
-            <button onclick="addAuto(1)">+</button>
-            <button onclick="subAuto(1)">-</button>
+            <button onclick="addAmount(10)">+</button>
+            <button onclick="subAmount(10)">-</button>
             <h1 id="count">0</h1>
             <h1 id="autoAmount">1</h1>
+        </div>
+
+        <div class="Upgrades">
+
+            <button id="autoClicker" class="Upgrade" onclick="Upgrade(0,'autoClicker')">
+                <h4 class="price"></h4>
+                <p class="desc"></p>
+            </button>
+            <button id="megaClicker" class="Upgrade" onclick="Upgrade(1, 'megaClicker')">
+                <h4 class="price"></h4>
+                <p class="desc"></p>
+            </button>
+
         </div>
 
         <script src="ClickerGame.js"></script>
