@@ -3,7 +3,7 @@ var P_Per_Second = 10000000;
 var t = new Date();
 var last_t = new Date();
 var num = 0;
-var num_names = ["", " Thousand", " Million", " Billion", "Trillion", " Quadrillion", " Quintillion", " Septillion"]
+var num_names = ["", " Thousand", " Million", " Billion", "Trillion", " Quadrillion", " Quintillion", " Septillion", " Octillion", " Nonillion", " Decillion"]
 var Upgrades = [
     {price:10, name: "Auto Clicker", max:100000, amount:0, description:"Automaticly farms for paper"},
     {price: 100, name: "Ultra Clicker", max:100000, amount: 0, description:"This is more advanced and crazy version of the autoclicker that you should totaly buy ;)"}
@@ -56,7 +56,7 @@ function shrinkNumber(number) {
 
     num = Math.floor(num * 100)/100 + num_names[num_idx];
     if(num_idx == 0){
-        num = Math.floor(num)
+        num = Math.floor(num);
     }   
     
     return(num)
@@ -74,17 +74,22 @@ function Upgrade(id, elementId) {
 
 }
 
-// function checkUpgrades() {
-//     var i = 0;
-//     while(i < document.getElementsByClassName("Upgrade").length){
-//         if(document.getElementsByClassName("Upgrade")[i].getElementsByClassName("price") <= Paper + P_Per_Second * 100 || document.getElementsByClassName("Upgrade")[i].getElementsByClassName("price") <= Paper)
-//         {
-//             document.getElementsByClassName("Upgrade")[i].getElementsByClassName("price").innerHTML = Upgrades[i].name + ": " + Upgrades[i].price;
-//             document.getElementsByClassName("Upgrade")[i].getElementsByClassName("price").innerHTML = Upgrades[i].description;
-//         } else {
-//             document.getElementsByClassName("Upgrade")[i].getElementsByClassName("price").innerHTML = "";
-//         }
-//         i += 1;
-//     }
+function checkUpgrades() {
+    document.getElementById("autoClicker").getElementsByClassName("price")[0].innerHTML = Upgrades[0].name + ": " + Upgrades[0].price * bulkPurchase;
+    document.getElementById("autoClicker").getElementsByClassName("desc")[0].innerHTML = Upgrades[0].description;
 
-// }
+    var i = 0;
+    while(i < document.getElementsByClassName("Upgrade").length){
+        var id = document.getElementsByClassName("Upgrade")[i].id
+        if(Upgrades[i].price <= Paper + P_Per_Second * 10 || Upgrades[i].price <= Paper && Upgrades[i].amount < Upgrades[i].max )
+        {
+            document.getElementById(id).hidden = false;
+            document.getElementById(id).getElementsByClassName("price")[0].innerHTML = Upgrades[i].name + ": " + Upgrades[i].price;
+            document.getElementById(id).getElementsByClassName("desc")[0].innerHTML = Upgrades[i].description;
+        } else {
+            document.getElementById(id).hidden = true;
+        }
+        i += 1;
+    }
+
+}
