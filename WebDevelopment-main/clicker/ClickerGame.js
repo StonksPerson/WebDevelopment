@@ -3,9 +3,9 @@ var t = new Date();
 var last_t = t;
 var num = 0;
 var Currency = [
-    {name: " ", amount: 0},
-    {name: "BIG", amount: 0}, 
-    {name: "Ultra", amount: 0}
+    {name: " ", amount: 0, chance: 90},
+    {name: "BIG", amount: 0, chance: 10}, 
+    {name: "Ultra", amount: 0, chance: 0.1}
 ]
 var num_names = ["", " Thousand", " Million", " Billion", "Trillion", " Quadrillion", " Quintillion", " Septillion", " Octillion", " Nonillion", " Decillion"]
 var Upgrades = [
@@ -36,15 +36,7 @@ for(i = 0; i < Upgrades.length; i++){
 }
 
 function ClickCounter(Amount) {
-
-
-    rand = Math.random();
-    if(rand < 0.9){
-        Currency[0].amount += 1 * Amount;
-    }else{
-        Currency[1].amount += 1 * Amount;
-    }
-
+    Currency[rollLuck()].amount += Amount
     UpdateCounter()
 }
 
@@ -167,5 +159,20 @@ function checkMonies() {
 
 
     }
+
+}
+
+function rollLuck() {
+
+    var rand = (Math.random() * 100 + Math.random() - 1 + Math.random() / 100);
+    var randNum = 0;
+    for(i = 0; i < Currency.length; i++){
+       
+        if(rand <= Currency[i].chance){
+            randNum++;
+        }
+
+    }
+    return(randNum - 1);
 
 }
