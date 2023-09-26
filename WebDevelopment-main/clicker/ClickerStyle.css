@@ -81,12 +81,12 @@ body {
 
 .currencies {
     background-image: url(adelin-preda--tOr_T4qTpQ-unsplash.jpg);
-    justify-content: space-between;
-    white-space: nowrap;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .mainNumbers {
-    width: fit-content;
+    width:fit-content;
     margin: 0;
     justify-content: space-between;
     vertical-align: middle;

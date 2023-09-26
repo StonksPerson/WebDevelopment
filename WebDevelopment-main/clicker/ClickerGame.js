@@ -1,6 +1,6 @@
-var Money_Per_Second = 10000000;
+var Money_Per_Second = 0;
 var t = new Date();
-var last_t = new Date();
+var last_t = t;
 var num = 0;
 var Currency = [
     {name: " ", amount: 0},
@@ -37,19 +37,21 @@ for(i = 0; i < Upgrades.length; i++){
 
 function ClickCounter(Amount) {
 
-    UpdateCounter()
+
     rand = Math.random();
     if(rand < 0.9){
-        Currency[0].amount += 1;
+        Currency[0].amount += 1 * Amount;
     }else{
-        Currency[1].amount += 1;
+        Currency[1].amount += 1 * Amount;
     }
+
+    UpdateCounter()
 }
 
 function UpdateCounter() {
     for(i = 0; i < Currency.length; i++){
         if(document.getElementById(Currency[i].name) != null){
-            document.getElementById(Currency[i].name).innerHTML = Currency[i].amount + " " + Currency[i].name + " Dollars";
+            document.getElementById(Currency[i].name).innerHTML = shrinkNumber(Currency[i].amount) + " " + Currency[i].name + " Dollars";
         }
     }
 }
@@ -65,14 +67,9 @@ function addAmount(Amount) {
 }
 
 function AddClicks () {
-    rand = Math.random();
-    if(Currency[0].amount + (Money_Per_Second*((t - last_t)/1000)) >= 1){
-        if(rand < 0.5){
-            Currency[0].amount = Currency[0].amount + Money_Per_Second;
-        }else{
-            Currency[1].amount = Currency[1].amount + Money_Per_Second;
-        }
-    }
+
+        ClickCounter(Money_Per_Second * ((t - last_t)/1000));
+
 
 }
 
@@ -80,13 +77,15 @@ setInterval(GameTick,1);
 
 function GameTick() {
 
-    Money_Per_Second = Upgrades[0].amount + Upgrades[1].amount * 100;
     t = new Date();
-    AddClicks();
+
+    Money_Per_Second = Upgrades[0].amount + Upgrades[1].amount * 100;
+
+    AddClicks()
+    UpdateCounter()
+    checkUpgrades()
+    checkMonies()
     last_t = t;
-    UpdateCounter();
-    checkUpgrades();
-    checkMonies();
 
 }
 
