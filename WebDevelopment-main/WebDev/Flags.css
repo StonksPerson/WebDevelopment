@@ -1,0 +1,309 @@
+#white-part {
+
+    background-color: white;
+    border: solid 2px black;
+    height: 200px;
+    width: 300px;
+    flex: content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#red-part { 
+    border-radius: 50%;
+    border-color: red;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#italian {
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#greenI {
+    background-color: green;
+    grid-column: 0 / 1;
+}
+
+#whiteI {
+    background-color: white;
+    grid-column: 0 / 2;
+}
+
+#redI {
+    background-color: red;
+    grid-column: 0 / 3;
+}
+
+#German {
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#blackG {
+    background-color: black;
+    grid-row: 1;
+}
+
+#redG {
+    background-color: red;
+    grid-row: 2;
+}
+
+#yellowG {
+    background-color: yellow;
+    grid-row: 3;
+}
+
+#Bologna {
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#blackB {
+    background-color: black;
+    grid-column: 1;
+}
+
+#yellowB {
+    background-color: yellow;
+    grid-column: 2;
+}
+
+#redB {
+    background-color: red;
+    grid-column: 3;
+}
+
+#Thailand {
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#red1T {
+    background-color: darkred;
+    grid-row: 1;
+}
+
+#red2T {
+    background-color: darkred;
+    grid-row: 6;
+}
+
+#white1T {
+    background-color: white;
+    grid-row: 2;
+}
+
+#white2T {
+    background-color: white;
+    grid-row: 5;
+}
+
+#blue1T {
+    background-color: darkblue;
+    grid-row: 3;
+}
+
+#blue2T {
+    background-color: darkblue;
+    grid-row: 4;
+}
+
+#Switzerland {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#cross1 {
+    background-color: white;
+    grid-row: 3;
+    grid-column: 2 / 5;
+}
+
+#cross2 {
+    background-color: white;
+    grid-row: 2 / 5;
+    grid-column: 3;
+}
+
+#Ikea {
+    background-color: blue;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#yellow1 {
+    background-color: yellow;
+    grid-row: 1 / 9;
+    grid-column: 4;
+}
+
+#yellow2 {
+    background-color: yellow;
+    grid-row: 3;
+    grid-column: 1 / 10;
+}
+
+#UnitedArabEmirates {
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#redU {
+    background-color: red;
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+#greenU {
+    background-color: green;
+    grid-row: 1;
+    grid-column: 2 / 5;
+}
+
+#blackU {
+    background-color: black;
+    grid-row: 3;
+    grid-column: 2 / 5;
+}
+
+#Czech {
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#blueTriangle {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-left: 100px solid blue;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+
+#redC{
+    background-color: red;
+    grid-row: 1;
+}
+
+#Greece {
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#blue1G{
+    background-color: blue;
+    grid-row: 1;
+    grid-column: 6 / 13;
+}
+
+#blue2G{
+    background-color: blue;
+    grid-row: 3;
+    grid-column: 6 / 13;
+}
+
+#blue3G{
+    background-color: blue;
+    grid-row: 5;
+    grid-column: 6 / 13;
+}
+
+#blue4G{
+    background-color: blue;
+    grid-row: 7;
+    grid-column: 1 / 13;
+}
+
+#blue5G{
+    background-color: blue;
+    grid-row: 9;
+    grid-column: 1 / 13;
+}
+
+#blue6G{
+    background-color: blue;
+    grid-row: 4 / 6;
+    grid-column: 1 / 3;
+}
+
+#blue7G{
+    background-color: blue;
+    grid-row: 4 / 6;
+    grid-column: 4 / 6;
+}
+
+#blue8G{
+    background-color: blue;
+    grid-row: 1 / 3;
+    grid-column: 4 / 6;
+}
+
+#blue9G{
+    background-color: blue;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}

@@ -3,14 +3,14 @@ var t = new Date();
 var last_t = t;
 var num = 0;
 var Currency = [
-    {name: " ", amount: 0, chance: 90, initial "$"},
-    {name: "BIG", amount: 0, chance: 10, initial: "B"}, 
-    {name: "Ultra", amount: 0, chance: 0.1, initial: "U"}
+    {name: " ", amount: 0, chance: 90},
+    {name: "BIG", amount: 0, chance: 10}, 
+    {name: "Ultra", amount: 0, chance: 0.1}
 ]
 var num_names = ["", " Thousand", " Million", " Billion", "Trillion", " Quadrillion", " Quintillion", " Septillion", " Octillion", " Nonillion", " Decillion"]
 var Upgrades = [
     {price:100, name: "Auto Clicker", max:100000, amount:0, description:"Construction workers that only need to be payed once! (They are not very good at their job.)", id: "autoClicker"},
-    {price: 10000, name: "Ultra Clicker", max:100000, amount: 0, description:"This is more advanced and crazy version of the autoclicker that you should totaly buy ;)", id: "megaClicker"},
+    {price: 10000, name: "Ultra Clicker", max:100000, amount: 1000, description:"This is more advanced and crazy version of the autoclicker that you should totaly buy ;)", id: "megaClicker"},
     {price: 10000, name: "Crazy Upgrade", max:100000, amount: 0, description:"This upgrade is for real the coolest upgrade in the intire world :)))))", id: "CoolUpgrade" }
 ]
 var bulkPurchase = 1;
@@ -41,16 +41,11 @@ function ClickCounter(Amount) {
 }
 
 function UpdateCounter() {
-    var title = "";
     for(i = 0; i < Currency.length; i++){
         if(document.getElementById(Currency[i].name) != null){
             document.getElementById(Currency[i].name).innerHTML = shrinkNumber(Currency[i].amount) + " " + Currency[i].name + " Dollars";
         }
-        if(Currency[i].amount > 0){
-         title = title + (Currency[i].amount + Currency[i].initial;   
-        }
     }
-    document.title = itle;
 }
 
 function subAmount(Amount) {
