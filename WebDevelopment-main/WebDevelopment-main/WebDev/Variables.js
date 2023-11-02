@@ -1,0 +1,15 @@
+firstName = "Connor"
+middleName = "James"
+lastName = "Anderson Barrera"
+age = 14
+grade = 9
+eyes = 2
+rich = false
+wantsToBeRich = true
+hasTable = true
+friends = ["Landon", "Ryan", "Bruce", "ect"]
+foods = ["burger", "sandwich", "oatmeal"]
+tables = ["round", "tall", "foldable", "desk"]
+Connor = { age: 14, firstName : Connor }
+flavors = { Chocolate: true, Vanilla: true, Crubleberry: false}
+Kyle = {name: "kyle", age: 52, happy: true}
