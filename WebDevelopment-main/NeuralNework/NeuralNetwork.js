@@ -1,6 +1,36 @@
-enemyData = {x:0, vx:0 , y:0, vy:0}
-time = Date();
-d_time = Date();
+var enemyData = {x:0, vx:0 , y:0, vy:0}
+var time = Date();
+var d_time = Date();
+var NeuronRows = 3;
+var NeuronColums = 2;
+var NeuronInputs = [0,0,0]
+var NeruonOutputs = [0,0,0];
+var hiddenLayer = [];
+//List of lists conatining what neurons the neuron is connected to
+var NeuronWeights = [];
+//array of neuron connections
+var currentNeuron = [];
+
+function initializeNeurons() {
+    for(i = 0; i < 3; i++){
+        for(e = 0; e < NeuronRows; e++){
+            currentNeuron.push((e % NeuronRows));
+            NeuronWeights[i][e] = 0;
+        }
+        hiddenLayer.push(currentNeuron)
+        currentNeuron = [];
+    }
+    for(i = 1; i < NeuronColums; i++){
+        for(s = 0; s < NeuronRows; s++){
+            for(w = 0; w < NeuronRows; w++){
+                currentNeuron.push(s + 3);
+                NeuronWeights[i][e] = 0;
+            }
+        }
+        hiddenLayer.push(currentNeuron)
+        currentNeuron = [];
+    }
+}
 
 setInterval(Tick,1);
 
