@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="refresh" content="0.1">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <p id="clock" style="font-size: 10vh; color: black; background-color: lightblue;" class="centered"></p>
+
+        <script>
+            const time = new Date();
+            document.getElementById("clock").innerHTML = time.toLocaleTimeString();
+        </script>
+
+    </body>
+</html>
