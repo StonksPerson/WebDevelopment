@@ -1,0 +1,15 @@
+div{
+    height: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(216, 119, 119);
+    width: fit-content;
+    border-width: 20px;
+    border-color: black;
+    border: solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body{
+    background-image: url("Capture.PNG");
+}
