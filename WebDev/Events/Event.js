@@ -22,7 +22,7 @@ button.addEventListener("mouseover", moveOutOfWay);
 window.addEventListener("resize", resize);
 document.getElementById("buttonsText").addEventListener("select", select)
 document.addEventListener("keydown", noKeyboard);
-button.addEventListener("dblclick", doubleClick);
+document.getElementById("button").addEventListener("dblclick", doubleClick);
 document.addEventListener("wheel", wheel);
 document.getElementById("paste").addEventListener("paste", paste)
 document.addEventListener("mousedown", missed);
@@ -52,7 +52,7 @@ function wheel(){
 }
 
 function doubleClick(){
-    button.innerHTML = "DON'T SPAM... please >:(";
+    document.getElementById("button").innerHTML = "DON'T SPAM... please >:(";
 }
 
 function noKeyboard (){
@@ -103,5 +103,6 @@ function select(){
 }
 
 function returnState(){
+    document.getElementById("button").innerHTML = "DO NOT DOUBLE CLICK ME";
     button.innerHTML = states[state];
 }
