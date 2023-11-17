@@ -1,0 +1,73 @@
+#money {
+    width: 260px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#moneyDiv {
+    text-align: center;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #3F826D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#inputs {
+    margin-top: 20px;
+    background-color:#f7f7ffd8;
+    border-radius: 10px;
+    border: #f7f7ffd8 10px solid;
+    width: 90vw;
+}
+
+#inputsTitle {
+    color: #F7F7FF;
+    width: fit-content;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#545E75;
+    margin: 10px;
+    border: solid 10px #545E75;
+    border-radius: 10px;
+}
+
+#moneyTitle {
+    color: #F7F7FF;
+    width: fit-content;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input {
+    background-color: #C03221;
+    color: #F7F7FF;
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border-width: 0;
+    text-align: center;
+}
+
+::placeholder {
+    color: #F7F7FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: transparent;
+}
+
+.input:focus{
+    border: 20px #C03221 solid;
+}
+
+#tipsList {
+    background-color: #C03221;
+    border: #C03221 solid 10px;
+    border-radius: 10px;
+}
+
+body {
+    background-image: url(neon-seamless-pattern-with-80s-style-swillklitch.jpg);
+    image-resolution: 1000%;
+}
