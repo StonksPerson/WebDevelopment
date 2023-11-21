@@ -22,6 +22,7 @@
     border-radius: 10px;
     border: #f7f7ffd8 10px solid;
     width: 90vw;
+    margin-left: calc(2.5vw);
 }
 
 #inputsTitle {
@@ -37,6 +38,29 @@
 #moneyTitle {
     color: #F7F7FF;
     width: fit-content;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#surplus {
+    color: #F7F7FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
+    margin-left: calc(50vw - 100px);
+}
+
+#rating {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #F7F7FF;
+    border: solid 20px;
+    border-radius: 10px;
+}
+
+#tipsList {
+    color: #F7F7FF;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
