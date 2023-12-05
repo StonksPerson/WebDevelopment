@@ -1,10 +1,13 @@
 #footer {
     height: 100px;
     background-color: #1C3144;
+
 }
 
 body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -28,7 +31,7 @@ body {
 }
 
 #nav > a{
-    width: 25vw;
+    width: 33vw;
     height: 40px;
     margin: 0;
     padding: 0;
@@ -41,18 +44,118 @@ body {
 #main{
     background-color: #FFD8B5;
     width: 100vw;
-    height: calc(100vh - 90px);
+    height: 100vh;
+    padding-top: 200px;
     margin: 0;
-    overflow: scroll;
 }
 
 #welcome{
-    margin-top: 200px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    animation: rotate 5s;
 }
 
 #cat{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+.footerText {
+    color: white;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+#mainButton {
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    bottom: calc(50vh - 50px);
+    left: calc(50vw - 250px);
+    overflow: hidden;
+
+}
+
+#clickMe{
+    background-image: url(Screenshot\ 2023-11-14\ 135051.png);
+    width: 926px;
+    height: 236px;
+    position: absolute;
+    left: calc(50vw - 463px);
+}
+
+#welcome2 {
+    animation: color 5s infinite;
+}
+
+.click{
+    animation: grow 1s;
+    opacity: 0%;
+}
+
+@media screen and (){
+    #main{
+        font-size: 4vw;
+    }
+
+    .header {
+        height: 100px;
+        width: 100vw;
+        background-color: #1C3144;
+        margin: 0;
+        border-width: 0px;
+        text-align: center;
+        padding-top: 25px;
+        color: white;
+        font-size:larger;
+    }
+
+    #nav {
+        width: 100vw;
+        height: 100px;
+        margin: 0;
+        background-color: #758390;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@keyframes grow {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+@keyframes rotate {
+    from {rotate: 0deg;}
+    to {rotate: 359deg;}
+}
+
+@keyframes color {
+    0% {color: red;}
+    10% {color: greenyellow;}
+    20% {color: blue;}
+    30% {color: purple;}
+    40% {color: white;}
+    50% {color: black;}
+    60% {color: darkblue;}
+    70% {color: gold;}
+    80% {color: indianred;}
+    90% {color: indigo;}
+    100% {color: red;}
+}
+
+#mainButton {
+    width: 500px;
+    height: 200px;
+    background-color: #1C3144;
+    color: white;
+}
+
+#main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
 }
