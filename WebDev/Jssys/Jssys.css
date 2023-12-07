@@ -4,6 +4,10 @@
 
 }
 
+html {
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -14,11 +18,15 @@ body {
     height: 50px;
     width: 100vw;
     background-color: #1C3144;
-    margin: 0;
+    margin-top: 0;
     border-width: 0px;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 10px;
     color: white;
+}
+
+.header > p {
+    margin-top: 15px;
 }
 
 #nav {
@@ -97,31 +105,94 @@ body {
     opacity: 0%;
 }
 
-@media screen and (){
+@media screen and (max-width: 700px){
     #main{
         font-size: 4vw;
     }
 
     .header {
-        height: 100px;
+        height: 50px;
         width: 100vw;
         background-color: #1C3144;
-        margin: 0;
+        margin-top: 0;
+        padding: 1px;
         border-width: 0px;
         text-align: center;
-        padding-top: 25px;
         color: white;
-        font-size:larger;
+        font-size: larger;
     }
+
+    #header > p{
+        margin-bottom: 20px;
+    }    
 
     #nav {
         width: 100vw;
-        height: 100px;
+        height: 50px;
         margin: 0;
+        padding-top: 15px;
         background-color: #758390;
         display: flex;
         flex-direction: row;
     }
+
+    h1{
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+    #main{
+        font-size: 4vw;
+    }
+
+    .header {
+        height: 30px;
+        width: 100vw;
+        background-color: #1C3144;
+        margin-top: 0;
+        padding: 1px;
+        border-width: 0px;
+        text-align: center;
+        color: white;
+        font-size: larger;
+    }
+
+    .header > p{
+        margin: 0;
+    }    
+
+    #nav {
+        width: 100vw;
+        height: 40px;
+        margin: 0;
+        padding-top: 0px;
+        background-color: #758390;
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
 }
 
 @keyframes grow {
