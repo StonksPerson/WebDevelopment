@@ -3,6 +3,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="Jssys.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="The best website ever!">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Connor James Anderson Barrera">
     </head>
     <body>
         <div class="header">
@@ -22,6 +26,12 @@
                 <input type="checkbox" class="inputs" name="terms" style="margin-bottom: 20px;">
                 <label for="terms">Do you accept the terms and services?</label>
                 <br>
+                <input type="time" class="inputs" name="time">
+                <label for="time">What time is it?</label>
+                <br>
+                <input type="date" class="inputs" name="date">
+                <label for="date">When is your birthday?</label>
+                <br>
                 <p>Do you like cats?</p>
                 <input type="radio" class="inputs" name="cats" value="yes">
                 <label for="yes">Yes</label>
@@ -34,6 +44,15 @@
                 <br>
                 <input type="radio" class="inputs" name="cats" value="dogs">
                 <label for="dogs">Dogs are better</label>
+                <br>
+                <label for="food">Which food is the best: </label>
+                <select name="food">
+                    <option>Please choose an option</option>
+                    <option>Chicken</option>
+                    <option>Cake</option>
+                    <option>Steak</option>
+                    <option>Spaggeti</option>
+                </select>
                 <br>
                 <button style="margin-top: 50px;">submit</button>
             </form>
